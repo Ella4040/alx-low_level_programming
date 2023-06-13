@@ -1,19 +1,20 @@
+#include <stdlib.h>
 #include "main.h"
 /**
 * creates an array of chars, and initializes it with a specific char ();
 * @c: create
 * Return: size 0 (NULL)
- */
-char *create_array(unsigned int size, char c);
+*/
+char *create_array(unsigned int size, char c)
 {
-	char *y;
+	char *str;
 	unsigned int i;
 
-	y = malloc(sizeof(char) * size);
-	if (size == 0 || y == NULL)
+	str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
-		y[i] = c;
-	return (y);
+		str[i] = c;
+	return (str);
 }
