@@ -1,5 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef LISTS_H
+#define LISTS_H
+
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ */
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
